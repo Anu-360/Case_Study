@@ -67,16 +67,6 @@ INSERT INTO Task VALUES('Create Interface',201,01,'Started'),
                        ('Develop User Profile',204,05,'Completed'),
                        ('Create Visualization Graphs',200,02,'Assigned'),
                        ('Ensure Quality',202,04,'Assigned')
-SELECT * FROM Employee
-SELECT * FROM Project
-SELECT * FROM Task
 
 
-
-
---Before importing data 
-EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT all'
-
---After importing data
-EXEC sp_msforeachtable 'ALTER TABLE ? CHECK CONSTRAINT all'
 
